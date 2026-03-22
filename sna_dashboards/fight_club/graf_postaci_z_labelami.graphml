@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d1" for="node" attr.name="label" attr.type="string"/>
+<graph edgedefault="undirected"><node id="JACK">
+  <data key="d1">JACK</data>
+</node>
+<node id="TYLER">
+  <data key="d1">TYLER</data>
+</node>
+<node id="MARLA">
+  <data key="d1">MARLA</data>
+</node>
+<node id="BOSS">
+  <data key="d1">BOSS</data>
+</node>
+<node id="BOB">
+  <data key="d1">BOB</data>
+</node>
+<node id="ANGEL FACE">
+  <data key="d1">ANGEL FACE</data>
+</node>
+<node id="RICKY">
+  <data key="d1">RICKY</data>
+</node>
+<node id="MECHANIC">
+  <data key="d1">MECHANIC</data>
+</node>
+<node id="INTERN">
+  <data key="d1">INTERN</data>
+</node>
+<node id="EVERYONE">
+  <data key="d1">EVERYONE</data>
+</node>
+<node id="LEADER">
+  <data key="d1">LEADER</data>
+</node>
+<node id="CHLOE">
+  <data key="d1">CHLOE</data>
+</node>
+<node id="ANOTHER SPACE MONKEY">
+  <data key="d1">ANOTHER SPACE MONKEY</data>
+</node>
+<node id="SPEAKER">
+  <data key="d1">SPEAKER</data>
+</node>
+<node id="BUSINESS WOMAN">
+  <data key="d1">BUSINESS WOMAN</data>
+</node>
+<node id="BUSISNESS WOMAN">
+  <data key="d1">BUSISNESS WOMAN</data>
+</node>
+<node id="SECURITY TFM">
+  <data key="d1">SECURITY TFM</data>
+</node>
+<node id="DOORMAN">
+  <data key="d1">DOORMAN</data>
+</node>
+<node id="WALTER">
+  <data key="d1">WALTER</data>
+</node>
+<node id="GOATEED MAN">
+  <data key="d1">GOATEED MAN</data>
+</node>
+<node id="OPPONENT">
+  <data key="d1">OPPONENT</data>
+</node>
+<node id="COP">
+  <data key="d1">COP</data>
+</node>
+<node id="DETECTIVE STERN">
+  <data key="d1">DETECTIVE STERN</data>
+</node>
+<node id="LOU">
+  <data key="d1">LOU</data>
+</node>
+<node id="FIRST MAN">
+  <data key="d1">FIRST MAN</data>
+</node>
+<node id="SECOND MAN">
+  <data key="d1">SECOND MAN</data>
+</node>
+<node id="SEMINARIAN">
+  <data key="d1">SEMINARIAN</data>
+</node>
+<node id="CLERK">
+  <data key="d1">CLERK</data>
+</node>
+<node id="RAYMOND">
+  <data key="d1">RAYMOND</data>
+</node>
+<node id="OTHERS TOGETHER">
+  <data key="d1">OTHERS TOGETHER</data>
+</node>
+<node id="JACOBS">
+  <data key="d1">JACOBS</data>
+</node>
+<node id="VALET">
+  <data key="d1">VALET</data>
+</node>
+<node id="RICKY AND MECHANIC">
+  <data key="d1">RICKY AND MECHANIC</data>
+</node>
+<node id="ALL SPACE MONKEYS">
+  <data key="d1">ALL SPACE MONKEYS</data>
+</node>
+<node id="BARTENDER">
+  <data key="d1">BARTENDER</data>
+</node>
+<node id="BANDAGED PROPRIETOR">
+  <data key="d1">BANDAGED PROPRIETOR</data>
+</node>
+<node id="KITCHEN WORKERS">
+  <data key="d1">KITCHEN WORKERS</data>
+</node>
+<node id="WOUNDED BARTENDER">
+  <data key="d1">WOUNDED BARTENDER</data>
+</node>
+<node id="DESK CLERK">
+  <data key="d1">DESK CLERK</data>
+</node>
+<node id="DIFFERENT VOICE">
+  <data key="d1">DIFFERENT VOICE</data>
+</node>
+<node id="WAITER">
+  <data key="d1">WAITER</data>
+</node>
+<node id="BALD DETECTIVE">
+  <data key="d1">BALD DETECTIVE</data>
+</node>
+<node id="BALDY">
+  <data key="d1">BALDY</data>
+</node>
+<node id="REDHEAD">
+  <data key="d1">REDHEAD</data>
+</node>
+<node id="REDHEAD DETECTIVE">
+  <data key="d1">REDHEAD DETECTIVE</data>
+</node>
+<node id="STERN">
+  <data key="d1">STERN</data>
+</node>
+<node id="JACK&#13;&#10;                 NO...&#13;&#10;&#13;&#10;                             TYLER">
+  <data key="d1">JACK NO... TYLER</data>
+</node>
+<node id="SHORT SPACE MONKEY">
+  <data key="d1">SHORT SPACE MONKEY</data>
+</node>
+<node id="TALL SPACE MONKEY">
+  <data key="d1">TALL SPACE MONKEY</data>
+</node>
+<edge source="JACK" target="TYLER">
+  <data key="d0">40</data>
+</edge>
+<edge source="JACK" target="MARLA">
+  <data key="d0">19</data>
+</edge>
+<edge source="JACK" target="BOSS">
+  <data key="d0">5</data>
+</edge>
+<edge source="JACK" target="BOB">
+  <data key="d0">4</data>
+</edge>
+<edge source="JACK" target="ANGEL FACE">
+  <data key="d0">3</data>
+</edge>
+<edge source="JACK" target="RICKY">
+  <data key="d0">3</data>
+</edge>
+<edge source="JACK" target="MECHANIC">
+  <data key="d0">3</data>
+</edge>
+<edge source="JACK" target="INTERN">
+  <data key="d0">2</data>
+</edge>
+<edge source="JACK" target="ANOTHER SPACE MONKEY">
+  <data key="d0">2</data>
+</edge>
+<edge source="JACK" target="CHLOE">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="LEADER">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="BUSINESS WOMAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="BUSISNESS WOMAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="SECURITY TFM">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="DOORMAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="OPPONENT">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="DETECTIVE STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="CLERK">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="RAYMOND">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="OTHERS TOGETHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="VALET">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="RICKY AND MECHANIC">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="ALL SPACE MONKEYS">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="BARTENDER">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="BANDAGED PROPRIETOR">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="KITCHEN WORKERS">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="WOUNDED BARTENDER">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="DESK CLERK">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="DIFFERENT VOICE">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="WAITER">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="BALD DETECTIVE">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="BALDY">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="REDHEAD">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="REDHEAD DETECTIVE">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="JACK&#13;&#10;                 NO...&#13;&#10;&#13;&#10;                             TYLER">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="SHORT SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK" target="TALL SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="MARLA">
+  <data key="d0">6</data>
+</edge>
+<edge source="TYLER" target="BUSINESS WOMAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="BUSISNESS WOMAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="GOATEED MAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="OPPONENT">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="DETECTIVE STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="LOU">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="CLERK">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="RAYMOND">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="BOB">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="JACOBS">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="VALET">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="MECHANIC">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="RICKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="RICKY AND MECHANIC">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="ANOTHER SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="JACK&#13;&#10;                 NO...&#13;&#10;&#13;&#10;                             TYLER">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="SHORT SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="TYLER" target="TALL SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="CHLOE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="LEADER">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="COP">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="DETECTIVE STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="BOSS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="WAITER">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="ANOTHER SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="JACK&#13;&#10;                 NO...&#13;&#10;&#13;&#10;                             TYLER">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="SHORT SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MARLA" target="TALL SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOSS" target="WALTER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOB" target="EVERYONE">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOB" target="LEADER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOB" target="SPEAKER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOB" target="ANGEL FACE">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOB" target="OTHERS TOGETHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOB" target="RICKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOB" target="JACOBS">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANGEL FACE" target="RICKY">
+  <data key="d0">2</data>
+</edge>
+<edge source="ANGEL FACE" target="OTHERS TOGETHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANGEL FACE" target="ALL SPACE MONKEYS">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANGEL FACE" target="ANOTHER SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANGEL FACE" target="MECHANIC">
+  <data key="d0">1</data>
+</edge>
+<edge source="RICKY" target="MECHANIC">
+  <data key="d0">2</data>
+</edge>
+<edge source="RICKY" target="OTHERS TOGETHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="RICKY" target="RICKY AND MECHANIC">
+  <data key="d0">1</data>
+</edge>
+<edge source="RICKY" target="ALL SPACE MONKEYS">
+  <data key="d0">1</data>
+</edge>
+<edge source="RICKY" target="ANOTHER SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MECHANIC" target="RICKY AND MECHANIC">
+  <data key="d0">1</data>
+</edge>
+<edge source="MECHANIC" target="ALL SPACE MONKEYS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MECHANIC" target="ANOTHER SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="EVERYONE" target="LEADER">
+  <data key="d0">2</data>
+</edge>
+<edge source="EVERYONE" target="SPEAKER">
+  <data key="d0">1</data>
+</edge>
+<edge source="EVERYONE" target="CHLOE">
+  <data key="d0">1</data>
+</edge>
+<edge source="LEADER" target="CHLOE">
+  <data key="d0">2</data>
+</edge>
+<edge source="LEADER" target="SPEAKER">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANOTHER SPACE MONKEY" target="ALL SPACE MONKEYS">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANOTHER SPACE MONKEY" target="JACK&#13;&#10;                 NO...&#13;&#10;&#13;&#10;                             TYLER">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANOTHER SPACE MONKEY" target="SHORT SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="ANOTHER SPACE MONKEY" target="TALL SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="BUSINESS WOMAN" target="BUSISNESS WOMAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="FIRST MAN" target="SECOND MAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="FIRST MAN" target="SEMINARIAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="SECOND MAN" target="SEMINARIAN">
+  <data key="d0">1</data>
+</edge>
+<edge source="CLERK" target="RAYMOND">
+  <data key="d0">1</data>
+</edge>
+<edge source="KITCHEN WORKERS" target="WOUNDED BARTENDER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BALD DETECTIVE" target="BALDY">
+  <data key="d0">1</data>
+</edge>
+<edge source="BALD DETECTIVE" target="REDHEAD">
+  <data key="d0">1</data>
+</edge>
+<edge source="BALD DETECTIVE" target="REDHEAD DETECTIVE">
+  <data key="d0">1</data>
+</edge>
+<edge source="BALD DETECTIVE" target="STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="BALDY" target="REDHEAD">
+  <data key="d0">1</data>
+</edge>
+<edge source="BALDY" target="REDHEAD DETECTIVE">
+  <data key="d0">1</data>
+</edge>
+<edge source="BALDY" target="STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="REDHEAD" target="REDHEAD DETECTIVE">
+  <data key="d0">1</data>
+</edge>
+<edge source="REDHEAD" target="STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="REDHEAD DETECTIVE" target="STERN">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK&#13;&#10;                 NO...&#13;&#10;&#13;&#10;                             TYLER" target="SHORT SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="JACK&#13;&#10;                 NO...&#13;&#10;&#13;&#10;                             TYLER" target="TALL SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+<edge source="SHORT SPACE MONKEY" target="TALL SPACE MONKEY">
+  <data key="d0">1</data>
+</edge>
+</graph></graphml>
