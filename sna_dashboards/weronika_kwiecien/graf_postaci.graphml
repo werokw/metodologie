@@ -1,0 +1,848 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="weight" attr.type="long"/>
+<graph edgedefault="undirected"><node id="CORALINE"/>
+<node id="MOTHER"/>
+<node id="OTHER MOTHER"/>
+<node id="WYBIE"/>
+<node id="CAT"/>
+<node id="OTHER FATHER"/>
+<node id="MEL"/>
+<node id="OTHER WYBIE"/>
+<node id="CHARLIE"/>
+<node id="BELDAM"/>
+<node id="TALL OTHER MOTHER"/>
+<node id="MR. BOBINSKY"/>
+<node id="MISS SPINK"/>
+<node id="MISS FORCIBLE"/>
+<node id="OTHER MR. BOBINSKY"/>
+<node id="WYBIE'S GRANDMOTHER"/>
+<node id="SWEET GIRL GHOST"/>
+<node id="BOY GHOST"/>
+<node id="DRAGONFLIES"/>
+<node id="TOY SQUID"/>
+<node id="CONTINUE"/>
+<node id="TALL GIRL GHOST"/>
+<node id="PHOTO FRIEND 1"/>
+<node id="PHOTO FRIEND 2"/>
+<node id="MAGIC DRAGONFLY"/>
+<node id="PANICKED"/>
+<node id="YOUNG SPINK"/>
+<node id="MATCH MOVE DISSOLVE TO"/>
+<node id="JUMP CUT TO"/>
+<node id="OTHER MISS SPINK"/>
+<node id="YOUNG FORCIBLE"/>
+<node id="OTHER MISS FORCIBLE"/>
+<node id="MATCH PULLBACK"/>
+<node id="PHOTO FRIENDS"/>
+<node id="TOY TANK GIRAFFE"/>
+<node id="ENTRANCE TO OTHER ORCHARD"/>
+<node id="OTHER HOUSE REAPPEARS"/>
+<node id="OTHER ORCHARD"/>
+<node id="OTHER STEEP HILLSIDE TRAIL"/>
+<node id="ALL GHOSTS"/>
+<node id="WRAPPED BOX"/>
+<node id="YOUNG RASCAL"/>
+<node id="TAFFY MONSTER"/>
+<node id="DON'T LEAVE ME! DON'T LEAVE ME!!! I'LL"/>
+<edge source="CORALINE" target="MOTHER">
+  <data key="d0">36</data>
+</edge>
+<edge source="CORALINE" target="OTHER MOTHER">
+  <data key="d0">24</data>
+</edge>
+<edge source="CORALINE" target="WYBIE">
+  <data key="d0">20</data>
+</edge>
+<edge source="CORALINE" target="CAT">
+  <data key="d0">18</data>
+</edge>
+<edge source="CORALINE" target="OTHER FATHER">
+  <data key="d0">15</data>
+</edge>
+<edge source="CORALINE" target="MEL">
+  <data key="d0">14</data>
+</edge>
+<edge source="CORALINE" target="OTHER WYBIE">
+  <data key="d0">11</data>
+</edge>
+<edge source="CORALINE" target="CHARLIE">
+  <data key="d0">11</data>
+</edge>
+<edge source="CORALINE" target="BELDAM">
+  <data key="d0">7</data>
+</edge>
+<edge source="CORALINE" target="TALL OTHER MOTHER">
+  <data key="d0">7</data>
+</edge>
+<edge source="CORALINE" target="MR. BOBINSKY">
+  <data key="d0">7</data>
+</edge>
+<edge source="CORALINE" target="MISS SPINK">
+  <data key="d0">6</data>
+</edge>
+<edge source="CORALINE" target="MISS FORCIBLE">
+  <data key="d0">5</data>
+</edge>
+<edge source="CORALINE" target="OTHER MR. BOBINSKY">
+  <data key="d0">4</data>
+</edge>
+<edge source="CORALINE" target="BOY GHOST">
+  <data key="d0">3</data>
+</edge>
+<edge source="CORALINE" target="DRAGONFLIES">
+  <data key="d0">3</data>
+</edge>
+<edge source="CORALINE" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">3</data>
+</edge>
+<edge source="CORALINE" target="SWEET GIRL GHOST">
+  <data key="d0">3</data>
+</edge>
+<edge source="CORALINE" target="CONTINUE">
+  <data key="d0">3</data>
+</edge>
+<edge source="CORALINE" target="TALL GIRL GHOST">
+  <data key="d0">3</data>
+</edge>
+<edge source="CORALINE" target="TOY SQUID">
+  <data key="d0">3</data>
+</edge>
+<edge source="CORALINE" target="MAGIC DRAGONFLY">
+  <data key="d0">2</data>
+</edge>
+<edge source="CORALINE" target="PHOTO FRIEND 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="CORALINE" target="PHOTO FRIEND 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="CORALINE" target="PANICKED">
+  <data key="d0">2</data>
+</edge>
+<edge source="CORALINE" target="YOUNG SPINK">
+  <data key="d0">2</data>
+</edge>
+<edge source="CORALINE" target="JUMP CUT TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="ENTRANCE TO OTHER ORCHARD">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="OTHER HOUSE REAPPEARS">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="OTHER ORCHARD">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="OTHER STEEP HILLSIDE TRAIL">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="OTHER MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="YOUNG RASCAL">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="WRAPPED BOX">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="TAFFY MONSTER">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="DON'T LEAVE ME! DON'T LEAVE ME!!! I'LL">
+  <data key="d0">1</data>
+</edge>
+<edge source="CORALINE" target="MATCH MOVE DISSOLVE TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="OTHER MOTHER">
+  <data key="d0">24</data>
+</edge>
+<edge source="MOTHER" target="OTHER FATHER">
+  <data key="d0">13</data>
+</edge>
+<edge source="MOTHER" target="CAT">
+  <data key="d0">9</data>
+</edge>
+<edge source="MOTHER" target="WYBIE">
+  <data key="d0">8</data>
+</edge>
+<edge source="MOTHER" target="TALL OTHER MOTHER">
+  <data key="d0">7</data>
+</edge>
+<edge source="MOTHER" target="MEL">
+  <data key="d0">6</data>
+</edge>
+<edge source="MOTHER" target="OTHER WYBIE">
+  <data key="d0">5</data>
+</edge>
+<edge source="MOTHER" target="CHARLIE">
+  <data key="d0">4</data>
+</edge>
+<edge source="MOTHER" target="BELDAM">
+  <data key="d0">3</data>
+</edge>
+<edge source="MOTHER" target="TOY SQUID">
+  <data key="d0">3</data>
+</edge>
+<edge source="MOTHER" target="PHOTO FRIEND 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="MOTHER" target="MAGIC DRAGONFLY">
+  <data key="d0">2</data>
+</edge>
+<edge source="MOTHER" target="DRAGONFLIES">
+  <data key="d0">2</data>
+</edge>
+<edge source="MOTHER" target="PHOTO FRIEND 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="MOTHER" target="CONTINUE">
+  <data key="d0">2</data>
+</edge>
+<edge source="MOTHER" target="SWEET GIRL GHOST">
+  <data key="d0">2</data>
+</edge>
+<edge source="MOTHER" target="PANICKED">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="WRAPPED BOX">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="BOY GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="YOUNG RASCAL">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="TALL GIRL GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="MR. BOBINSKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="DON'T LEAVE ME! DON'T LEAVE ME!!! I'LL">
+  <data key="d0">1</data>
+</edge>
+<edge source="MOTHER" target="MATCH MOVE DISSOLVE TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="OTHER FATHER">
+  <data key="d0">12</data>
+</edge>
+<edge source="OTHER MOTHER" target="WYBIE">
+  <data key="d0">7</data>
+</edge>
+<edge source="OTHER MOTHER" target="TALL OTHER MOTHER">
+  <data key="d0">7</data>
+</edge>
+<edge source="OTHER MOTHER" target="OTHER WYBIE">
+  <data key="d0">5</data>
+</edge>
+<edge source="OTHER MOTHER" target="TOY SQUID">
+  <data key="d0">3</data>
+</edge>
+<edge source="OTHER MOTHER" target="CAT">
+  <data key="d0">3</data>
+</edge>
+<edge source="OTHER MOTHER" target="DRAGONFLIES">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER MOTHER" target="MAGIC DRAGONFLY">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER MOTHER" target="PHOTO FRIEND 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER MOTHER" target="PHOTO FRIEND 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER MOTHER" target="MEL">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER MOTHER" target="MATCH MOVE DISSOLVE TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="PANICKED">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="CONTINUE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="WRAPPED BOX">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="BELDAM">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="BOY GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="YOUNG RASCAL">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="SWEET GIRL GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="TALL GIRL GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="MR. BOBINSKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MOTHER" target="CHARLIE">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="OTHER WYBIE">
+  <data key="d0">11</data>
+</edge>
+<edge source="WYBIE" target="CAT">
+  <data key="d0">5</data>
+</edge>
+<edge source="WYBIE" target="OTHER FATHER">
+  <data key="d0">4</data>
+</edge>
+<edge source="WYBIE" target="MR. BOBINSKY">
+  <data key="d0">4</data>
+</edge>
+<edge source="WYBIE" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">3</data>
+</edge>
+<edge source="WYBIE" target="OTHER MR. BOBINSKY">
+  <data key="d0">2</data>
+</edge>
+<edge source="WYBIE" target="MISS FORCIBLE">
+  <data key="d0">2</data>
+</edge>
+<edge source="WYBIE" target="MISS SPINK">
+  <data key="d0">2</data>
+</edge>
+<edge source="WYBIE" target="MEL">
+  <data key="d0">2</data>
+</edge>
+<edge source="WYBIE" target="BELDAM">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="OTHER MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="YOUNG SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="CONTINUE">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="TALL OTHER MOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="WYBIE" target="CHARLIE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="MEL">
+  <data key="d0">3</data>
+</edge>
+<edge source="CAT" target="BELDAM">
+  <data key="d0">3</data>
+</edge>
+<edge source="CAT" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">3</data>
+</edge>
+<edge source="CAT" target="CHARLIE">
+  <data key="d0">2</data>
+</edge>
+<edge source="CAT" target="PANICKED">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="MR. BOBINSKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="ENTRANCE TO OTHER ORCHARD">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="OTHER HOUSE REAPPEARS">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="OTHER ORCHARD">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="OTHER STEEP HILLSIDE TRAIL">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="SWEET GIRL GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="DON'T LEAVE ME! DON'T LEAVE ME!!! I'LL">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="MATCH MOVE DISSOLVE TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="CAT" target="TOY SQUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="OTHER WYBIE">
+  <data key="d0">4</data>
+</edge>
+<edge source="OTHER FATHER" target="PHOTO FRIEND 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER FATHER" target="DRAGONFLIES">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER FATHER" target="TOY SQUID">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER FATHER" target="PHOTO FRIEND 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER FATHER" target="CONTINUE">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER FATHER" target="PANICKED">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="MAGIC DRAGONFLY">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="TALL OTHER MOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="BOY GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER FATHER" target="MR. BOBINSKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEL" target="CHARLIE">
+  <data key="d0">6</data>
+</edge>
+<edge source="MEL" target="MISS SPINK">
+  <data key="d0">2</data>
+</edge>
+<edge source="MEL" target="TOY SQUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEL" target="BELDAM">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEL" target="YOUNG RASCAL">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEL" target="MATCH MOVE DISSOLVE TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEL" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEL" target="MR. BOBINSKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="MEL" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="MR. BOBINSKY">
+  <data key="d0">3</data>
+</edge>
+<edge source="OTHER WYBIE" target="OTHER MR. BOBINSKY">
+  <data key="d0">2</data>
+</edge>
+<edge source="OTHER WYBIE" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="OTHER MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="YOUNG SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="CONTINUE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER WYBIE" target="TALL OTHER MOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="CHARLIE" target="MISS SPINK">
+  <data key="d0">2</data>
+</edge>
+<edge source="CHARLIE" target="BELDAM">
+  <data key="d0">1</data>
+</edge>
+<edge source="CHARLIE" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CHARLIE" target="MATCH MOVE DISSOLVE TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="CHARLIE" target="TOY SQUID">
+  <data key="d0">1</data>
+</edge>
+<edge source="CHARLIE" target="MR. BOBINSKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="CHARLIE" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BELDAM" target="SWEET GIRL GHOST">
+  <data key="d0">3</data>
+</edge>
+<edge source="BELDAM" target="BOY GHOST">
+  <data key="d0">2</data>
+</edge>
+<edge source="BELDAM" target="TALL GIRL GHOST">
+  <data key="d0">2</data>
+</edge>
+<edge source="BELDAM" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="BELDAM" target="MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="BELDAM" target="MR. BOBINSKY">
+  <data key="d0">1</data>
+</edge>
+<edge source="BELDAM" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BELDAM" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="BELDAM" target="TALL OTHER MOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="BELDAM" target="DON'T LEAVE ME! DON'T LEAVE ME!!! I'LL">
+  <data key="d0">1</data>
+</edge>
+<edge source="TALL OTHER MOTHER" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="TALL OTHER MOTHER" target="BOY GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="TALL OTHER MOTHER" target="SWEET GIRL GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="TALL OTHER MOTHER" target="TALL GIRL GHOST">
+  <data key="d0">1</data>
+</edge>
+<edge source="MR. BOBINSKY" target="OTHER MR. BOBINSKY">
+  <data key="d0">4</data>
+</edge>
+<edge source="MR. BOBINSKY" target="MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MR. BOBINSKY" target="MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MR. BOBINSKY" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS SPINK" target="MISS FORCIBLE">
+  <data key="d0">4</data>
+</edge>
+<edge source="MISS SPINK" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS SPINK" target="OTHER MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS SPINK" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS SPINK" target="YOUNG SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS SPINK" target="CONTINUE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS SPINK" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS FORCIBLE" target="OTHER MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS FORCIBLE" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS FORCIBLE" target="YOUNG SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS FORCIBLE" target="CONTINUE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS FORCIBLE" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS FORCIBLE" target="WRAPPED BOX">
+  <data key="d0">1</data>
+</edge>
+<edge source="MISS FORCIBLE" target="WYBIE'S GRANDMOTHER">
+  <data key="d0">1</data>
+</edge>
+<edge source="SWEET GIRL GHOST" target="TALL GIRL GHOST">
+  <data key="d0">2</data>
+</edge>
+<edge source="SWEET GIRL GHOST" target="BOY GHOST">
+  <data key="d0">2</data>
+</edge>
+<edge source="SWEET GIRL GHOST" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="BOY GHOST" target="TALL GIRL GHOST">
+  <data key="d0">2</data>
+</edge>
+<edge source="BOY GHOST" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="DRAGONFLIES" target="TOY SQUID">
+  <data key="d0">2</data>
+</edge>
+<edge source="DRAGONFLIES" target="PHOTO FRIEND 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="DRAGONFLIES" target="PHOTO FRIEND 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="DRAGONFLIES" target="CONTINUE">
+  <data key="d0">1</data>
+</edge>
+<edge source="DRAGONFLIES" target="MAGIC DRAGONFLY">
+  <data key="d0">1</data>
+</edge>
+<edge source="DRAGONFLIES" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="DRAGONFLIES" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="DRAGONFLIES" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOY SQUID" target="PHOTO FRIEND 1">
+  <data key="d0">2</data>
+</edge>
+<edge source="TOY SQUID" target="PHOTO FRIEND 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="TOY SQUID" target="MATCH MOVE DISSOLVE TO">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOY SQUID" target="CONTINUE">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOY SQUID" target="MAGIC DRAGONFLY">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOY SQUID" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOY SQUID" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="TOY SQUID" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="MAGIC DRAGONFLY">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="PHOTO FRIEND 1">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="PHOTO FRIEND 2">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="OTHER MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="CONTINUE" target="YOUNG SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="TALL GIRL GHOST" target="ALL GHOSTS">
+  <data key="d0">1</data>
+</edge>
+<edge source="TALL GIRL GHOST" target="TAFFY MONSTER">
+  <data key="d0">1</data>
+</edge>
+<edge source="TALL GIRL GHOST" target="YOUNG SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 1" target="PHOTO FRIEND 2">
+  <data key="d0">2</data>
+</edge>
+<edge source="PHOTO FRIEND 1" target="MAGIC DRAGONFLY">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 1" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 1" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 1" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 2" target="MAGIC DRAGONFLY">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 2" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 2" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIEND 2" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MAGIC DRAGONFLY" target="MATCH PULLBACK">
+  <data key="d0">1</data>
+</edge>
+<edge source="MAGIC DRAGONFLY" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MAGIC DRAGONFLY" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="YOUNG SPINK" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="YOUNG SPINK" target="OTHER MISS SPINK">
+  <data key="d0">1</data>
+</edge>
+<edge source="YOUNG SPINK" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="YOUNG SPINK" target="TAFFY MONSTER">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MISS SPINK" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER MISS SPINK" target="YOUNG FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="YOUNG FORCIBLE" target="OTHER MISS FORCIBLE">
+  <data key="d0">1</data>
+</edge>
+<edge source="MATCH PULLBACK" target="PHOTO FRIENDS">
+  <data key="d0">1</data>
+</edge>
+<edge source="MATCH PULLBACK" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="PHOTO FRIENDS" target="TOY TANK GIRAFFE">
+  <data key="d0">1</data>
+</edge>
+<edge source="ENTRANCE TO OTHER ORCHARD" target="OTHER HOUSE REAPPEARS">
+  <data key="d0">1</data>
+</edge>
+<edge source="ENTRANCE TO OTHER ORCHARD" target="OTHER ORCHARD">
+  <data key="d0">1</data>
+</edge>
+<edge source="ENTRANCE TO OTHER ORCHARD" target="OTHER STEEP HILLSIDE TRAIL">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER HOUSE REAPPEARS" target="OTHER ORCHARD">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER HOUSE REAPPEARS" target="OTHER STEEP HILLSIDE TRAIL">
+  <data key="d0">1</data>
+</edge>
+<edge source="OTHER ORCHARD" target="OTHER STEEP HILLSIDE TRAIL">
+  <data key="d0">1</data>
+</edge>
+</graph></graphml>
