@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coraline SNA – Grouped & Visible Edges</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #05070a;
+    --accent-pink: #ff2e88; /* Grupa Koraliny */
+    --accent-blue: #38bdf8; /* Inny Świat */
+    --accent-gold: #eab308; /* Twory / Magia */
+    --text-dim: #94a3b8;
+    --border: #1e293b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: var(--bg-dark);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 400px;
+    background: rgba(13, 17, 23, 0.98);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    z-index: 10;
+  }
+
+  header { padding: 40px 30px; border-bottom: 1px solid var(--border); }
+  header h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
+
+  #node-info { padding: 30px; flex-grow: 1; overflow-y: auto; }
+  .card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 25px; border-radius: 4px; }
+  .card-id { font-family: 'Playfair Display', serif; font-size: 2rem; color: #fff; margin-bottom: 10px; }
+  .role-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; padding: 4px 10px; border-radius: 2px; margin-bottom: 15px; display: inline-block; color: #fff; }
+  .description-text { font-size: 0.9rem; line-height: 1.6; color: var(--text-dim); margin-bottom: 25px; }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+  .stat-item { border: 1px solid var(--border); padding: 12px; text-align: center; background: rgba(0,0,0,0.3); }
+  .stat-val { display: block; font-size: 1.3rem; font-weight: 700; color: #fff; }
+  .stat-lbl { font-size: 0.6rem; color: var(--text-dim); text-transform: uppercase; }
+
+  .graph-container { flex-grow: 1; position: relative; }
+  .ui-overlay { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); display: flex; background: rgba(13, 17, 23, 0.9); padding: 8px; border-radius: 50px; border: 1px solid var(--border); }
+  .btn { background: transparent; border: none; color: var(--text-dim); padding: 8px 20px; font-size: 0.7rem; text-transform: uppercase; font-weight: 700; cursor: pointer; border-radius: 20px; transition: 0.3s; }
+  .btn.active { background: #fff; color: #000; }
+
+  /* --- POPRAWIONA WIDOCZNOŚĆ KRAWĘDZI --- */
+  .link { 
+    stroke: #64748b; /* Jaśniejszy stalowo-szary kolor */
+    stroke-opacity: 0.45; /* Zwiększona widoczność bazowa */
+    transition: stroke 0.3s, stroke-opacity 0.3s;
+  }
+  
+  .link.highlight { 
+    stroke: var(--accent-gold); /* Podświetlenie na złoto */
+    stroke-opacity: 1; /* Pełna widoczność */
+    stroke-width: 3px !important; /* Wymuszenie grubszej linii przy zaznaczeniu */
+    filter: drop-shadow(0 0 5px rgba(234, 179, 8, 0.5)); /* Lekka poświata */
+  }
+
+  .node circle { stroke: var(--bg-dark); stroke-width: 1.5px; cursor: pointer; transition: 0.2s; }
+  .node.selected circle { stroke: #fff; stroke-width: 3px; }
+  .node text { fill: #cbd5e1; font-size: 8px; pointer-events: none; text-transform: uppercase; font-weight: 600; text-shadow: 1px 1px 2px #000; } /* Lepsza czytelność tekstu */
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <header><h1>CORALINE</h1></header>
+  <div id="node-info">
+    <div style="opacity: 0.3; font-size: 0.75rem; text-align: center; margin-top: 100px;">WYBIERZ POSTAĆ Z GRUPY</div>
+  </div>
+</aside>
+
+<main class="graph-container">
+  <div class="ui-overlay">
+    <button class="btn active" id="btn-deg" onclick="updateScaling('deg')">Skaluj: Stopień</button>
+    <button class="btn" id="id-btn-bc" onclick="updateScaling('bc')">Skaluj: Wpływ</button>
+    <button class="btn" onclick="resetView()">Reset</button>
+  </div>
+  <svg id="viz" width="100%" height="100%"></svg>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const NODES = [
+  {id:"CORALINE",mod:0,bc:0.30,deg:34,desc:"Główna oś sieci. Łączy światy, co daje jej najwyższy współczynnik pośrednictwa (Betweenness Centrality)."},
+  {id:"MOTHER",mod:0,bc:0.10,deg:27,desc:"Kluczowa postać świata rzeczywistego, ograniczająca przestrzeń życiową Koraliny."},
+  {id:"OTHER MOTHER",mod:1,bc:0.09,deg:26,desc:"Beldam. Architekt Innego Świata. Tworzy własną sieć relacji, by kontrolować ofiary."},
+  {id:"WYBIE",mod:0,bc:0.03,deg:19,desc:"Towarzysz podróży Koraliny w świecie realnym."},
+  {id:"CAT",mod:0,bc:0.01,deg:13,desc:"Jedyny element sieci poruszający się swobodnie między klastrami."},
+  {id:"OTHER FATHER",mod:2,bc:0.02,deg:16,desc:"Główny element klastra Tworów. Choć stworzony przez Beldam, wykazuje unikalne powiązania."},
+  {id:"MEL",mod:0,bc:0.01,deg:13,desc:"Codzienne oblicze matki Koraliny."},
+  {id:"OTHER WYBIE",mod:1,bc:0.02,deg:14,desc:"Pomocnik w Innym Świecie, postać o kluczowym wpływie na sukces bohaterki."},
+  {id:"CHARLIE",mod:0,bc:0.00,deg:12,desc:"Ojciec Koraliny, osadzony głęboko w klastrze świata realnego."},
+  {id:"BELDAM",mod:1,bc:0.02,deg:16,desc:"Prawdziwa forma Innej Matki, drapieżnik u szczytu sieci Innego Świata."},
+  {id:"TALL OTHER MOTHER",mod:1,bc:0.00,deg:11,desc:"Końcowa faza ewolucji zagrożenia w sieci scenicznej."},
+  {id:"MR. BOBINSKY",mod:0,bc:0.01,deg:14,desc:"Dziwny sąsiad, element lokalnej społeczności Pink Palace."},
+  {id:"MISS SPINK",mod:0,bc:0.01,deg:15,desc:"Wróżbitka, dostarcza Koralinie narzędzi do nawigacji w sieci."},
+  {id:"MISS FORCIBLE",mod:0,bc:0.02,deg:17,desc:"Sąsiadka o silnych powiązaniach z Miss Spink i Koraliną."},
+  {id:"OTHER MR. BOBINSKY",mod:1,bc:0,deg:4,desc:"Cyrkowiec w Innym Świecie."},
+  {id:"WYBIE'S GRANDMOTHER",mod:0,bc:0,deg:9,desc:"Strażniczka historii Pink Palace."},
+  {id:"SWEET GIRL GHOST",mod:1,bc:0,deg:9,desc:"Dusza więziona przez Beldam."},
+  {id:"BOY GHOST",mod:1,bc:0,deg:9,desc:"Ofiara z przeszłości, osadzona w Innym Świecie."},
+  {id:"DRAGONFLIES",mod:2,bc:0,deg:11,desc:"Elementy flory Innego Świata, grupa Innego Ojca."},
+  {id:"TOY SQUID",mod:2,bc:0.01,deg:14,desc:"Ożywiony przedmiot, wchodzi w interakcje z bohaterką."},
+  {id:"TALL GIRL GHOST",mod:1,bc:0.01,deg:10,desc:"Zaginiona siostra babci."},
+  {id:"PHOTO FRIEND 1",mod:2,bc:0,deg:11,desc:"Postać z przeszłości / wyobraźni."},
+  {id:"PHOTO FRIEND 2",mod:2,bc:0,deg:11,desc:"Postać z przeszłości / wyobraźni."},
+  {id:"MAGIC DRAGONFLY",mod:2,bc:0,deg:11,desc:"Magiczny twór ogrodu."},
+  {id:"YOUNG SPINK",mod:1,bc:0.01,deg:10,desc:"Wersja Innego Świata."},
+  {id:"OTHER MISS SPINK",mod:1,bc:0,deg:8,desc:"Teatralna wersja sąsiadki."},
+  {id:"YOUNG FORCIBLE",mod:1,bc:0,deg:8,desc:"Wersja Innego Świata."},
+  {id:"OTHER MISS FORCIBLE",mod:1,bc:0,deg:8,desc:"Teatralna wersja sąsiadki."},
+  {id:"MATCH PULLBACK",mod:2,bc:0,deg:11,desc:"Element techniczny sceny ogrodowej."},
+  {id:"PHOTO FRIENDS",mod:2,bc:0,deg:11,desc:"Grupa znajomych Koraliny."},
+  {id:"TOY TANK GIRAFFE",mod:2,bc:0,deg:11,desc:"Ożywiony obiekt w pokoju."},
+  {id:"ALL GHOSTS",mod:1,bc:0,deg:8,desc:"Zbiorcze duchy dzieci."},
+  {id:"WRAPPED BOX",mod:1,bc:0,deg:4,desc:"Przedmiot sceniczny."},
+  {id:"YOUNG RASCAL",mod:1,bc:0,deg:4,desc:"Postać epizodyczna."},
+  {id:"TAFFY MONSTER",mod:1,bc:0,deg:3,desc:"Agresywny stwór w teatrze."}
+];
+
+const EDGES = [
+  ["CORALINE","MOTHER",36],["CORALINE","OTHER MOTHER",24],["CORALINE","WYBIE",20],
+  ["CORALINE","CAT",18],["CORALINE","OTHER FATHER",15],["CORALINE","MEL",14],
+  ["CORALINE","OTHER WYBIE",11],["CORALINE","CHARLIE",11],["CORALINE","BELDAM",7],
+  ["CORALINE","TALL OTHER MOTHER",7],["CORALINE","MR. BOBINSKY",7],["CORALINE","MISS SPINK",6],
+  ["CORALINE","MISS FORCIBLE",5],["CORALINE","OTHER MR. BOBINSKY",4],["CORALINE","BOY GHOST",3],
+  ["CORALINE","DRAGONFLIES",3],["CORALINE","WYBIE'S GRANDMOTHER",3],["CORALINE","SWEET GIRL GHOST",3],
+  ["CORALINE","TALL GIRL GHOST",3],["CORALINE","TOY SQUID",3],["MOTHER","OTHER MOTHER",24],
+  ["OTHER MOTHER","OTHER FATHER",12],["WYBIE","OTHER WYBIE",11],["MEL","CHARLIE",6],
+  ["MISS SPINK","MISS FORCIBLE",4],["BELDAM","SWEET GIRL GHOST",3]
+].map(d => ({source: d[0], target: d[1], value: d[2]}));
+
+const COLORS = { 0: 'var(--accent-pink)', 1: 'var(--accent-blue)', 2: 'var(--accent-gold)' };
+const LABELS = { 0: 'Świat Koraliny', 1: 'Inny Świat', 2: 'Inny Ojciec / Twory' };
+
+const svg = d3.select("#viz");
+const g = svg.append("g");
+const zoom = d3.zoom().on("zoom", (e) => g.attr("transform", e.transform));
+svg.call(zoom);
+
+const centers = {
+  0: {x: window.innerWidth/2 - 500, y: window.innerHeight/2},     
+  1: {x: window.innerWidth/2 + 200, y: window.innerHeight/2 - 100}, 
+  2: {x: window.innerWidth/2 + 200, y: window.innerHeight/2 + 100}  
+};
+
+const simulation = d3.forceSimulation(NODES)
+    .force("link", d3.forceLink(EDGES).id(d => d.id).distance(80))
+    .force("charge", d3.forceManyBody().strength(-200))
+    .force("collide", d3.forceCollide().radius(40))
+    .force("center", d3.forceCenter(window.innerWidth/2 - 200, window.innerHeight/2))
+    .force("x", d3.forceX(d => centers[d.mod].x).strength(0.15))
+    .force("y", d3.forceY(d => centers[d.mod].y).strength(0.15));
+
+// --- GWARANCJA MINIMALNEJ GRUBOŚCI KRAWĘDZI ---
+const link = g.append("g").selectAll("line").data(EDGES).join("line")
+    .attr("class", "link")
+    .attr("stroke-width", d => Math.max(1.5, Math.sqrt(d.value))); // Nawet połączenia o wartości 3 będą dobrze widoczne
+
+const node = g.append("g").selectAll("g").data(NODES).join("g")
+    .attr("class", "node")
+    .call(d3.drag()
+        .on("start", (e,d) => { if(!e.active) simulation.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+        .on("drag", (e,d) => { d.fx=e.x; d.fy=e.y; })
+        .on("end", (e,d) => { if(!e.active) simulation.alphaTarget(0); d.fx=null; d.fy=null; }))
+    .on("click", (event, d) => highlight(event, d)); // Przekazanie eventu, by zablokować domyślne zachowanie
+
+node.append("circle").attr("r", d => Math.sqrt(d.deg) * 4).attr("fill", d => COLORS[d.mod]);
+node.append("text").attr("dy", d => Math.sqrt(d.deg) * 4 + 14).attr("text-anchor", "middle").text(d => d.id);
+
+simulation.on("tick", () => {
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+function highlight(event, d) {
+    if(event) event.stopPropagation(); // Zatrzymuje kliknięcie przed przeniesieniem na tło
+    
+    // Zresetuj wszystkie klasy
+    node.classed("selected", false);
+    link.classed("highlight", false);
+    
+    // Podświetl wybrane
+    node.filter(n => n.id === d.id).classed("selected", true);
+    link.filter(l => l.source.id === d.id || l.target.id === d.id).classed("highlight", true);
+    
+    d3.select("#node-info").html(`
+        <div class="card">
+            <span class="role-tag" style="background:${COLORS[d.mod]}">${LABELS[d.mod]}</span>
+            <div class="card-id">${d.id}</div>
+            <p class="description-text">${d.desc}</p>
+            <div class="stats-grid">
+                <div class="stat-item"><span class="stat-val">${d.deg}</span><span class="stat-lbl">Relacje</span></div>
+                <div class="stat-item"><span class="stat-val">${(d.bc*100).toFixed(1)}%</span><span class="stat-lbl">Wpływ (BC)</span></div>
+            </div>
+        </div>
+    `);
+}
+
+// Resetowanie po kliknięciu w tło (SVG)
+svg.on("click", () => {
+    node.classed("selected", false);
+    link.classed("highlight", false);
+    d3.select("#node-info").html('<div style="opacity: 0.3; font-size: 0.75rem; text-align: center; margin-top: 100px;">WYBIERZ POSTAĆ Z GRUPY</div>');
+});
+
+function updateScaling(mode) {
+    d3.selectAll(".btn").classed("active", false);
+    d3.select(mode === 'deg' ? "#btn-deg" : "#id-btn-bc").classed("active", true);
+    node.select("circle").transition().duration(600).attr("r", d => mode === 'deg' ? Math.sqrt(d.deg) * 4 : Math.sqrt(d.bc * 1500) + 8);
+    node.select("text").transition().duration(600).attr("dy", d => (mode === 'deg' ? Math.sqrt(d.deg) * 4 : Math.sqrt(d.bc * 1500) + 8) + 14);
+}
+
+function resetView() { svg.transition().duration(750).call(zoom.transform, d3.zoomIdentity); }
+</script>
+</body>
+</html>
